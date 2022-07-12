@@ -35,6 +35,10 @@
            fetch="https://github.com/ProtonAOSP"
            revision="refs/heads/sc-v2" />
 
+  <remote  name="spark-modify"
+           fetch="https://github.com/SparkOS-Modify"
+           revision="refs/heads/12.1" />
+
   <!-- Remove unused hardware repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -171,7 +175,6 @@
 
   <!-- External repos -->
   <project path="external/AndroidSystemBlur" name="Lucchetto/AndroidSystemBlur" remote="github" revision="master"/>
-  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="12.1"/>
   <project path="external/exfatprogs" name="external_exfatprogs" remote="spark"/>
   <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
   <project path="external/fastrpc" name="external_fastrpc" remote="evo" />
@@ -193,8 +196,8 @@
   <project path="external/erofs-utils" name="platform/external/erofs-utils" remote="aosp" revision="75d73335d25d52afd6a09c116207cd09bece16ab" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="spark" />
-  <project path="frameworks/base" name="frameworks_base" remote="spark" />
+  <project path="frameworks/av" name="frameworks_av" remote="sparkos-modify" />
+  <project path="frameworks/base" name="frameworks_base" remote="sparkos-modify" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="spark" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="spark" />
   <project path="frameworks/native" name="frameworks_native" remote="spark" />
@@ -308,14 +311,14 @@
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="spark" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="spark" />
-  <project path="packages/apps/Fireworks" name="packages_apps_Fireworks" remote="spark" />
+  <project path="packages/apps/Fireworks" name="packages_apps_Fireworks" remote="sparkos-modify" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="spark" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="spark" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="sparkos-modify" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="spark" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="sparkos-modify" />
   <project path="packages/apps/SparkWallpaperStub" name="packages_apps_SparkWallpaperStub" remote="spark" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="spark" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="spark" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="sparkos-modify" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="spark" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="spark" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="evo" />
@@ -354,7 +357,7 @@
   <!-- vendor repos -->
   <project path="vendor/gms" name="android_vendor_gms" remote="spark-gitlab" clone-depth="1" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
-  <project path="vendor/spark" name="platform_vendor_spark" remote="spark" />
+  <project path="vendor/spark" name="platform_vendor_spark" remote="sparkos-modify" />
   <project path="vendor/lawnchair" name="vendor_lawnchair" remote="spark" />
   <project path="vendor/support" name="platform_vendor_support" remote="spark" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="spark" />
